@@ -1,0 +1,22 @@
+{
+  "name": "tarea1",
+  "version": "1.1.0",
+  "description": "Es la tarea numero uno del modulo 5",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tarea",
+    "uno",
+    "repaso",
+    "js"
+  ],
+  "author": "juliangadev",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
