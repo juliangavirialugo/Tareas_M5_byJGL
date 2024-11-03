@@ -1,0 +1,22 @@
+{
+  "name": "tarea2-nodejs",
+  "version": "1.2.0",
+  "description": "Esta es la tarea nunmero 2 del modulo 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "clase",
+    "tarea",
+    "nodejs"
+  ],
+  "author": "Juliangadev",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
