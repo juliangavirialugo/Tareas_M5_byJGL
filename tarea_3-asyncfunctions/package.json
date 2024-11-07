@@ -2,12 +2,13 @@
   "name": "tarea3",
   "version": "1.3.0",
   "description": "en esta tarea se incluyen el async await",
-  "main": "index.js",
+  "main": "tarea3.js",
   "scripts": {
     "start": "node tarea3.js",
     "watch": "node --watch tarea3.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "juliangadev",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
