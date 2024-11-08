@@ -10,7 +10,6 @@ const esperarSegundos = async (tiempo) => {
         console.time('tiempo')
         console.log('Se ha ejecutado con exito!')
         console.timeEnd('tiempo');
-        
     }, time);
 }
 
