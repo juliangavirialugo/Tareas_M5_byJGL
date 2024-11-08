@@ -1,0 +1,16 @@
+{
+  "name": "tarea_4-crud_archivos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-file": "node generator.js",
+    "find-even-number": "node --watch find.js",
+    "dev": "node --watch generator.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
