@@ -4,11 +4,14 @@
   "description": "",
   "main": "calculadora.js",
   "scripts": {
-    "start": "node calculadora.js", 
+    "start": "node calculadora.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
 }

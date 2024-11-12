@@ -1,0 +1,6 @@
+
+ Operación
+ Numero 1: 5
+ Numero 2: 5
+ Resultado: 1
+ 
