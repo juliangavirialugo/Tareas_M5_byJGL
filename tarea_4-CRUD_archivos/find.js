@@ -10,7 +10,7 @@ fs.readFile(archivo, { encoding: 'utf-8' }, (error, data) => {
     // Convertimos el contenido de data en un array de números
     const numeros = data.split('\n').map(num => parseInt(num, 10));
     // con filter filtramos los números pares
-    const numPares = numeros.filter(num => num % 2 === 0);
+    // const numPares = numeros.filter(num => num % 2 === 0);
     //Luego imprimimos los numeros pares 
     console.log(`Los numeros pares del archivo: ${archivo} son: `, numPares);
     
