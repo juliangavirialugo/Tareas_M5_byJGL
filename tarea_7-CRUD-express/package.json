@@ -1,0 +1,19 @@
+{
+  "name": "tarea_7-crud-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "crudexpress.js",
+  "scripts": {
+    "start": "node crudexpress.js",
+    "dev": "node --watch crudexpress.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.1",
+    "uuid": "^11.0.3"
+  }
+}
