@@ -1,35 +1,35 @@
-// Coded By Juliangadev
+// Coded By Juliangadev tarea numero 8
 import express from "express";
 import { v4 as uuid } from "uuid";
 import "dotenv/config";
-import fs from "fs";
+import {
+    getTest,
+    getStudents,
+    getStudentsById,
+    getStudentsByName,
+} from "./functions/getFunction.js";
+import { createStudents } from "./functions/postFunction.js";
+import { updateStudents } from "./functions/putFunction.js";
+import { deleteStudents } from "./functions/deleteFunction.js";
 
 const app = express();
 app.use(express.json());
 
 const port = process.env.PORT;
 
-const students = JSON.parse(fs.readFileSync("students.json", "utf-8"));
-
 app.listen(port, () => {
     console.log(`Server running on port ${port}...`);
 });
 
-app.get("/", (req, res) => {
-    res.send("El servidor funciona!!");
-    res.status(200, "El servidor funciona!!");
-});
+//metodos get-READ
+app.get("/", getTest);
+app.get("/students", getStudents);
+app.get("/students/:id", getStudentsById);
+app.get("/students/name/:name", getStudentsByName);
 
-app.get("/students", (req, res) => {
-    res.json(students);
-});
+//metodos post-CREATE
+app.post("/students", createStudents);
 
-app.get("/students/:id", (req, res) => {
-    if (students.length === 0) {
-        res.status(404).json({ message: "No se encuentra el estudiante" });
-    }
-    const { id } = req.params;
-    const student = students.find((student) => student.id === parseInt(id)); //ya no se convierte de texto a numero por uuid
-    if (!student) res.status(404).json({ mesage: "Estudiante no encontrado" });
-    res.json(student);
-});
+app.put("/students/:id", updateStudents);
+
+app.delete("/students/:id", deleteStudents);
